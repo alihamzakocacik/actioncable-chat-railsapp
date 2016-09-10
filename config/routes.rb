@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :chatrooms do
-    resouces :chatroom_users
-
+    resouce :chatroom_users
+ end
    root to: "chatrooms#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
